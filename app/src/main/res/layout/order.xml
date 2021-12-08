@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan"
+        android:textColor="@color/gold"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:text="@string/dari"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:paddingLeft="85dp">
+
+        <EditText
+            android:id="@+id/et_kota_asal"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:text="@string/menuju"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:paddingLeft="85dp">
+
+        <EditText
+            android:id="@+id/et_kota_tujuan"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:text="@string/tanggal"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:paddingLeft="85dp">
+
+        <EditText
+            android:id="@+id/et_tanggal"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom">
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:text="@string/jam"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:paddingLeft="85dp">
+
+        <EditText
+            android:id="@+id/et_jam"
+            android:layout_width="230dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:paddingLeft="160dp">
+
+        <Button
+            android:id="@+id/btn_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gold"
+            android:text="@string/btn_cari"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_gravity="bottom">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

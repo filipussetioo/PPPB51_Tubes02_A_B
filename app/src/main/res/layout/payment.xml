@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pembayaran"
+        android:textColor="@color/gold"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:text="@string/dari2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:paddingLeft="70dp">
+
+        <TextView
+            android:id="@+id/tv_kota_asal"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:text="@string/menuju2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="235dp"
+        android:paddingLeft="100dp">
+
+        <TextView
+            android:id="@+id/tv_kota_tujuan"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="290dp"
+        android:text="@string/tanggal2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="295dp"
+        android:paddingLeft="105dp">
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:text="@string/seat"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="355dp"
+        android:paddingLeft="70dp">
+
+        <TextView
+            android:id="@+id/tv_seat"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="410dp"
+        android:text="@string/harga"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="415dp"
+        android:paddingLeft="85dp">
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:text="@string/diskon"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="475dp"
+        android:paddingLeft="90dp">
+
+        <TextView
+            android:id="@+id/tv_diskon"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="530dp"
+        android:text="@string/total_harga"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:paddingLeft="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="535dp"
+        android:paddingLeft="135dp">
+
+        <TextView
+            android:id="@+id/tv_total_harga"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="620dp"
+        android:paddingLeft="150dp">
+
+        <Button
+            android:id="@+id/btn_pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gold"
+            android:text="@string/btn_pesan"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_gravity="bottom">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

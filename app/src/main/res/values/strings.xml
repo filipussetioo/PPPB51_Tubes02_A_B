@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">tugasbesar</string>
+    <string name="nama_aplikasi">Nama Aplikasi</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome">Selamat datang di (NamaAplikasi)</string>
+    <string name="intro">(Nama shuttle) adalah travel pilihan terbaik, terlengkap, ternama, dan sudah berpengalaman akan dunia pariwisata dan transportasi sejak tahun 1988, yang memiliki moto “The Best in Traveling Services”. (Nama shuttle) berkomitmen untuk membuat anda senyaman mungkin di perjalanan. (Nama shuttle)  yang terpercaya karena kualitasnya memiliki ratusan armanda kendaraan yang siap menemani wisata anda.</string>
+    <string name="btn_pesan_sekarang">PESAN SEKARANG</string>
+    <string name="pesan">Pesan</string>
+    <string name="dari">Dari</string>
+    <string name="menuju">Menuju</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam Berangkat</string>
+    <string name="btn_cari">CARI</string>
+    <string name="tempat_duduk">Tempat Duduk</string>
+    <string name="btn_lanjut">LANJUT</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="dari2">Dari :</string>
+    <string name="menuju2">Menuju :</string>
+    <string name="tanggal2">Tanggal :</string>
+    <string name="seat">Seat :</string>
+    <string name="harga">Harga :</string>
+    <string name="diskon">Diskon :</string>
+    <string name="total_harga">Total Harga :</string>
+    <string name="btn_pesan">PESAN</string>
+    <string name="history">History</string>
+    <string name="strip">-</string>
+</resources>
