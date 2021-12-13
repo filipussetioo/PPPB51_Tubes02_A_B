@@ -3,13 +3,17 @@ package com.example.tugasbesar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentResultListener;
 import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
-import com.example.tugasbesar.databinding.ActivityMainBinding;
+import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.tugasbesar.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     ActivityMainBinding binding;
     FragmentManager fragmentManager;
     DrawerLayout drawer;
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Seat halSeat;
     Payment halPayment;
     History halHistory;
+    BottomNavigationView bottom_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +57,37 @@ public class MainActivity extends AppCompatActivity {
         );
 
         //Splash screen
+        bottom_nav = findViewById(R.id.bottom_nav);
+        bottom_nav.setOnNavigationItemSelectedListener(this);
+
+        loadFragment(new Home());
 
     }
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
 
+        switch (item.getItemId()) {
+            case R.id.menu_item_home:
+                fragment = new Home();
+                break;
+            case R.id.menu_item_history:
+                fragment = new History();
+                break;
+            case R.id.menu_item_setting:
+                fragment = new Order();
+                break;
+        }
+        return loadFragment(fragment);
+    }
+    private boolean loadFragment(Fragment fragment) {
+        if (fragment != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commit();
+            return true;
+        }
+        return false;
+    }
     public void changePage(int page){
         FragmentTransaction ft = this.fragmentManager.beginTransaction();
         if (page == 0){
