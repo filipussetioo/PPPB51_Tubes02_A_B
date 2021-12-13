@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        //Splash screen
+
     }
 
     public void changePage(int page){
