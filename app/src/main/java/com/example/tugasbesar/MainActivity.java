@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import com.example.tugasbesar.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     FragmentManager fragmentManager;
     DrawerLayout drawer;
@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         );
 
         //Splash screen
-        bottom_nav = findViewById(R.id.bottom_nav);
+        /*bottom_nav = findViewById(R.id.bottom_nav);
         bottom_nav.setOnNavigationItemSelectedListener(this);
-
+*/
         loadFragment(new Home());
 
     }
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    /*public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
 
         switch (item.getItemId()) {
@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
         }
         return loadFragment(fragment);
-    }
+    }*/
     private boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
+       if (fragment != null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, fragment)
                     .commit();
