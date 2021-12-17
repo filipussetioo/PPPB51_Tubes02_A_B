@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view.payment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,14 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
-import com.example.tugasbesar.databinding.OrderBinding;
 
+import com.example.tugasbesar.databinding.PaymentBinding;
 
-public class Order extends Fragment implements View.OnClickListener{
-    OrderBinding binding;
+public class Payment extends Fragment implements View.OnClickListener{
+    PaymentBinding binding;
 
-    public static Order newInstance(){
-        Order fragment = new Order();
+    public static Payment newInstance(){
+        Payment fragment = new Payment();
         return fragment;
     }
 
@@ -21,17 +21,17 @@ public class Order extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        this.binding = OrderBinding.inflate(inflater, container, false);
-        this.binding.btnCari.setOnClickListener(this);
+        this.binding = PaymentBinding.inflate(inflater, container, false);
+        this.binding.btnPesan.setOnClickListener(this);
         return this.binding.getRoot();
     }
 
     @Override
     public void onClick(View v) {
         Log.d("debug", "clicked!");
-        if (v == this.binding.btnCari) {
+        if (v == this.binding.btnPesan) {
             Bundle result = new Bundle();
-            result.putInt("page", 4);
+            result.putInt("page", 6);
             this.getParentFragmentManager().setFragmentResult("changePage", result);
         }
     }

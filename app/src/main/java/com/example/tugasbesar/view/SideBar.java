@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,8 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 
+import com.example.tugasbesar.R;
+import com.example.tugasbesar.adapter.MenuAdapter;
+
 public class SideBar extends Fragment {
-    com.example.tugasbesar.MenuAdapter adapter;
+    com.example.tugasbesar.adapter.MenuAdapter adapter;
     ListView lv;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

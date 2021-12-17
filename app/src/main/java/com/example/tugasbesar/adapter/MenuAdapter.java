@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.adapter;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+
+import com.example.tugasbesar.R;
+
 import java.util.ArrayList;
 
 public class MenuAdapter extends BaseAdapter{
