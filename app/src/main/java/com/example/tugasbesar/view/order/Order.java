@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view.order;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,13 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
-import com.example.tugasbesar.databinding.LoginBinding;
+import com.example.tugasbesar.databinding.OrderBinding;
 
-public class Login extends Fragment implements View.OnClickListener {
-    LoginBinding binding;
 
-    public static Login newInstance(){
-        Login fragment = new Login();
+public class Order extends Fragment implements View.OnClickListener{
+    OrderBinding binding;
+
+    public static Order newInstance(){
+        Order fragment = new Order();
         return fragment;
     }
 
@@ -20,19 +21,18 @@ public class Login extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        this.binding = LoginBinding.inflate(inflater, container, false);
-        this.binding.btnLogin.setOnClickListener(this);
+        this.binding = OrderBinding.inflate(inflater, container, false);
+        this.binding.btnCari.setOnClickListener(this);
         return this.binding.getRoot();
     }
 
     @Override
     public void onClick(View v) {
         Log.d("debug", "clicked!");
-        if (v == this.binding.btnLogin) {
+        if (v == this.binding.btnCari) {
             Bundle result = new Bundle();
-            result.putInt("page", 1);
+            result.putInt("page", 4);
             this.getParentFragmentManager().setFragmentResult("changePage", result);
         }
     }
 }
-

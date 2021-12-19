@@ -1,9 +1,12 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.tugasbesar.MainActivity;
+import com.example.tugasbesar.R;
 
 public class SplashActivity extends AppCompatActivity {
 

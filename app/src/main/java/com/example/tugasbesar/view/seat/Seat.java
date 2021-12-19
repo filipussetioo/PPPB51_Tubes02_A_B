@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view.seat;
 
 import android.os.Bundle;
 import android.util.Log;

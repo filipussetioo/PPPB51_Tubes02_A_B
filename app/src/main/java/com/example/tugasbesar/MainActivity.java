@@ -11,6 +11,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.tugasbesar.databinding.ActivityMainBinding;
+import com.example.tugasbesar.view.SideBar;
+import com.example.tugasbesar.view.history.History;
+import com.example.tugasbesar.view.home.Home;
+import com.example.tugasbesar.view.login.Login;
+import com.example.tugasbesar.view.order.Order;
+import com.example.tugasbesar.view.payment.Payment;
+import com.example.tugasbesar.view.seat.Seat;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Seat halSeat;
     Payment halPayment;
     History halHistory;
-    BottomNavigationView bottom_nav;
+    //BottomNavigationView bottom_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
         //Splash screen
         /*bottom_nav = findViewById(R.id.bottom_nav);
         bottom_nav.setOnNavigationItemSelectedListener(this);
-*/
-        loadFragment(new Home());
 
+        loadFragment(new Home());
+*/
     }
     /*public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         Fragment fragment = null;
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return loadFragment(fragment);
-    }*/
+    }
     private boolean loadFragment(Fragment fragment) {
        if (fragment != null) {
             getSupportFragmentManager().beginTransaction()
@@ -87,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
-    }
+    }*/
     public void changePage(int page){
         FragmentTransaction ft = this.fragmentManager.beginTransaction();
         if (page == 0){

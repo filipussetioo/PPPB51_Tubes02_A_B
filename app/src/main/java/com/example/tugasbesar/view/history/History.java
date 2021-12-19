@@ -1,4 +1,4 @@
-package com.example.tugasbesar;
+package com.example.tugasbesar.view.history;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

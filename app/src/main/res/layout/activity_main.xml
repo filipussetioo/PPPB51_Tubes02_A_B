@@ -20,7 +20,7 @@
         android:layout_gravity="start"
         android:background="@color/black">
         <fragment
-            android:name="com.example.tugasbesar.SideBar"
+            android:name="com.example.tugasbesar.view.SideBar"
             android:id="@+id/sidebar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
